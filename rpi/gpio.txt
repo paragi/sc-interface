@@ -1,0 +1,30 @@
+RPI B1 Breakout 
+
+PINS Left:
+CE1 => GPIO8
+CE0 => GPIO 7
+SCLK => GPIO 11
+MISO => GPIO 9
+MOSI => GPIO 10
+RXD => GPIO 15
+TXD => GPIO 14
+SCL => GPIO 3 (rev 2)
+SDA => GPIO 2 (rev 2)
+
+PINS Right:
+P0 => GPIO 17
+P1 => GPIO 18
+P2 => GPIO 27 (rev 2)
+P3 => GPIO 22
+P4 => GPIO 23
+P5 => GPIO 24
+P6 => GPIO 25
+P7 => GPIO 4
+
+Activate p1
+cd /sys/class/gpio/
+echo 18 > export
+cd *18
+echo out >gpio18/direction
+echo 1 >value
+
